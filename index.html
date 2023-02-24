@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="./style.css">
+
+        <script>
+            console.log('Hello CodeTribe Bootcamp 2023')
+            /*alert(new Date())*/
+
+            function thumbsUp() {
+            document.getElementById("myImg").src ="./assets/images/thumb-up.png";
+            }
+            function thumbsDown() {
+            document.getElementById("myImg").src ="./assets/images/thumb-down.png";
+            }
+            function navigateToNextPage() {
+                localStorage.setItem("id", "KamoM");
+                window.location.href = "./home.html";
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <p>Hello World</p>
+        <div class="mainContainer">
+            <img src="./assets/images/thumb-up.png" id="myImg" alt=""/>
+
+            <div>
+                <button style="background-color: green;" onclick="thumbsUp()">Thumbs Up</button>
+                <button style="background-color: black; color: white;" onclick="navigateToNextPage()">
+                    Go To Next Page</button>
+                <button style="background-color: red;" onclick="thumbsDown()">Thumbs Down</button>
+            </div>
+
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+</html>
